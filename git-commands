@@ -1,0 +1,137 @@
+gitinit
+
+git config --list
+
+git config --global user.name "veera reddy"
+git config --global user.email "veera.reddy.lomati@accenture.com"
+
+touch file1
+ls
+
+git status --- untracked fiels: file1 --- workspace
+
+git add file1
+
+git satus --- changes to be commited: file1 --- staging/index
+
+git commit -m "sample file" file1
+
+git log 
+commit:xsffsdlgmhkosglkdsxmvlmbfmldb
+author:veera reddy <veera.reddy.lomati@accenture.com>
+Date : tue oct 25 06:49:08 2022
+
+    Sample File
+
+git show xsffsdlgmhkosglkdsxmvlmbfmldb
+
+we can see the file1 here
+
+...........................................................................................................
+touch file1 file2 file3 file4 file5
+git status
+
+git add file1 file2 file3 file4 file5
+or
+git add .
+or 
+git add *
+or
+git add -A
+
+git status
+git commit -m "test files" 
+git log
+git show cid
+
+..................................................................................................................
+
+touch file6
+git status----------------workspace
+
+git add file6
+git satus-----------------staging/index
+
+git reset HEAD file6
+git status----------------workspace
+
+...................................................................................................................
+
+touch file6
+git status ---------------------- workspace
+
+out put--- new file: file6
+git add .
+git status-----------------------staging/index
+
+git commit -m "sample file6"
+git log 
+git show cid-------------------- local repository
+git reset --soft cid(n-1 formula... if you want reset top one, we need to use below cid )
+git status --------------------- staging/index
+
+...............................................................................................................
+open the file1 and enter some text--- hello, how are you
+git status--- work space
+modified: file1 ---- red color
+
+git add .
+git status --------- staging/index
+
+modified: file1 --- green color
+
+git commit -m "file1" 
+cat file1  ---- to check the data present in file1
+
+output :hello, how are you
+
+....................................................................................................................
+again modify the data in file1---- welcome to devops world
+
+git status ---- workspace
+
+modified : fiel1 redcolor
+
+check what data modified
+git diff file1
+
+hello, how are you
++ welcome to devops world
+we can move directly from workspace to local repository
+git commit -m "modified file1" file1
+
+git log
+git show cid
+
+to move directly from local repository to workspace
+git reset --mixed cid (n-1)--- while moving one file from local repository to workspace-- 
+internally file move to staging and from staging the particular file 
+and whatever the files are available in staging will move to workspace
+
+Eg: staging having file8,file9
+local repository --file10
+while moving file10 to workspace directly, it will also move the file8 and file10
+...................................................................................................
+
+clone central repository
+
+git clone Https://.................copy from git-hub
+cd repo1
+
+git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
