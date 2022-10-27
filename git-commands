@@ -3,7 +3,6 @@ gitinit
 git config --list
 
 git config --global user.name "veera reddy"
-
 git config --global user.email "veera.reddy.lomati@accenture.com"
 
 touch file1
@@ -121,21 +120,18 @@ cd repo1
 
 git push
 
-git log
-git log -n
-git log --oneline
-git log --oneline -n
-git log --file-name
-git log --grep "label"
-git log --author=veera --oneline -n
-git log --since=yy-mm-dd --until=yy-mm-dd
-git log --after="yy-mm-dd 6:30" --before="yy-mm-dd 7:30"
-git branch
-git branch release1
-git checkout release1
-git merge main
-git branch -d release1
-git branch -D release2
-git push origin release1
-git push path release1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
