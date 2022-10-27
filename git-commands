@@ -114,7 +114,7 @@ local repository --file10
 while moving file10 to workspace directly, it will also move the file8 and file10
 ...................................................................................................
 
-clone central repository
+clone central repository to local machine
 
 git clone Https://.................copy from git-hub
 cd repo1
